@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+.slick-prev,
+.slick-next {
+  z-index: 50;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev {
+  left: 20px !important;
+}
+
+.slick-next {
+  right: 20px !important;
+}
+
+/* arrow icon */
+.slick-prev:before,
+.slick-next:before {
+  color: #067dc7;
+  font-size: 32px;
+  opacity: 1 !important;
+}
+
+/* Tailwind button reset fix */
+.slick-prev,
+.slick-next {
+  background: transparent !important;
+}

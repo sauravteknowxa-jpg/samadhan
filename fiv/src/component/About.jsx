@@ -44,7 +44,7 @@ function About(){
         <>
 
         <div className="w-full">
-                <div className="container">
+                {/* <div className="container"> */}
                     <div className="bg-[#faefef] flex flex-col items-center justify-center gap-6 pt-48 pb-44">
                         <h3 className="text-7xl font-bold text-center">About Us</h3>
                         <ul className="flex flex-row items-center justify-center gap-5">
@@ -55,34 +55,34 @@ function About(){
                             <li className="text-2xl font-bold">About Us</li>
                         </ul>
                     </div>
-                </div>
+                {/* </div> */}
         </div>
 
 
           <div className="w-full">
-                <div className=" flex flex-col md:flex-row gap-8 bg-slate-50 p-4 sm:px-6 md:px-10 lg:px-24  w-full">
-                    <div className="flex items-center justify-center  md:w-1/2 py-6  w-full">
+                <div className=" flex flex-col lg:flex-row gap-8 bg-slate-50 p-4 sm:px-6 lg:px-10 lg:px-24  w-full">
+                    <div className="flex items-center justify-center  lg:w-1/2 py-6  w-full">
                         <img src="/image/about-img.png" alt="" className="rounded-2xl" />
                         
                     </div>
-                    <div className="flex flex-col items-center md:items-start text-center md:text-left justify-center gap-8  md:w-1/2 w-full ">
+                    <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center gap-8  lg:w-1/2 w-full ">
                         <div className="flex flex-col gap-2">
                             <span className="text-[#0A2F66] text-2xl font-semibold">About Samadhantra</span>
                              <h1 className="text-4xl text-black font-bold">Where Requirements Turn into Results</h1>
                         
                         </div>
-                        <div className="flex flex-wrap md:items-start md:justify-start items-center justify-center gap-4">
+                        <div className="flex flex-wrap lg:items-start lg:justify-start items-center justify-center gap-4">
                             <p>Samadhantra is a unified solution system designed to fulfil demand and supply for all stakeholders through a structured, transparent, and collaborative platform.</p>
                             <p> We bring together individuals, institutions, service providers, industry, academia, NGOs, and government bodies to create an ecosystem where requirements are clearly identified, resources are efficiently aligned, and solutions are effectively delivered.</p>
                             <p>Samadhantra is not just a platform—it is a system that enables collaboration, trust, and sustainable outcomes across sectors.</p>
 
                         </div>
-                        <div className="flex flex-col md:items-start md:justify-start gap-4">
-                            <div className="flex flex-row md:items-start md:justify-start gap-4">
+                        <div className="flex flex-col lg:items-start lg:justify-start gap-4">
+                            <div className="flex flex-row lg:items-start lg:justify-start gap-4">
                                 <h3 className="text-lg font-bold">One Platform, Every Stakeholder</h3>
                                 <h3 className="text-lg font-bold">Smart & Faster Solution Discovery</h3>
                             </div>
-                            <div className="flex flex-row md:items-start md:justify-start gap-4">
+                            <div className="flex flex-row lg:items-start lg:justify-start gap-4">
                                 <h3 className="text-lg font-bold">Reduced Complexity, Better Execution</h3>
                                 <h3 className="text-lg font-bold">Seamless Collaboration Across Ecosystem</h3>
                             </div>
@@ -95,8 +95,8 @@ function About(){
             </div>
 
             <div className="flex flex-col items-center justify-center w-full pt-10">
-                        <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-32 text-center">
-                            <h2 className="text-black  text-xl sm:text-2xl md:text-3xl font-bold">
+                        <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-32 text-center">
+                            <h2 className="text-black  text-xl sm:text-2xl lg:text-3xl font-bold">
                                How Samadhantra Creates Impact
                             </h2>
         
@@ -152,14 +152,14 @@ function About(){
              </div>
 
              <div className="flex flex-col items-center justify-center w-full pt-10">
-                            <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-32 text-center">
+                            <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-32 text-center">
                                 <span className="text-[#49981e]  text-xl sm:text-2xl font-bold">
                                     WHY SAMADHANTRA
                                 </span>
             
                                 <p className="
                                 text-black 
-                                text-2xl sm:text-3xl md:text-4xl 
+                                text-2xl sm:text-3xl lg:text-4xl 
                                 font-bold 
                                 pt-3 pb-6
                                 max-w-3xl
@@ -174,7 +174,7 @@ function About(){
             
             
                                 <div className="bg-[#faefef] rounded-2xl p-6 flex flex-col items-start gap-4 
-                              hover:shadow-md transition">
+                              hover:shadow-lg transition">
             
                                     <div className="w-12 h-12 rounded-full bg-white 
                                 flex items-center justify-center">
@@ -192,7 +192,7 @@ function About(){
             
             
                                 <div className="bg-[#faefef] rounded-2xl p-6 flex flex-col items-start gap-4 
-                              hover:shadow-md transition">
+                              hover:shadow-lg transition">
             
                                     <div className="w-12 h-12 rounded-full bg-white 
                                 flex items-center justify-center">
@@ -210,7 +210,7 @@ function About(){
             
             
                                 <div className="bg-[#faefef] rounded-2xl p-6 flex flex-col items-start gap-4 
-                              hover:shadow-md transition">
+                              hover:shadow-lg transition">
             
                                     <div className="w-12 h-12 rounded-full bg-white 
                                 flex items-center justify-center">
@@ -236,32 +236,36 @@ function About(){
             <div className="w-full pt-16">
 
  
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 text-center">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 text-center">
     <span className="text-[#6ce36c] text-xl sm:text-2xl font-bold">
       LEADERSHIP
     </span>
 
-    <p className="text-black text-xl sm:text-2xl md:text-4xl 
+    <p className="text-black text-xl sm:text-2xl lg:text-4xl 
                   font-bold pt-4 pb-10">
       Founder & CEO
     </p>
   </div>
 
 
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-24">
-    <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+  <div className=" px-4 sm:px-6 lg:px-24">
+    <div className="flex flex-col lg:flex-row
+      items-center justify-center
+      gap-10">
 
      
-      <div className="shrink-0">
+      <div className="shrink-0 flex justify-center lg:justify-start w-full lg:w-auto">
         <img
           src="/image/ramesh-sir.png"
           alt="Dr. Ramesh"
-          className="w-72 h-72 rounded-3xl object-cover shadow-lg"
+          className="w-64 h-64 sm:w-72 sm:h-72 rounded-3xl object-cover shadow-lg"
         />
       </div>
 
       
-      <div className="flex flex-col items-start gap-4">
+      <div className="flex flex-col gap-4
+        items-center lg:items-start
+        text-center lg:text-left">
 
         <span className="text-sm font-semibold text-gray-500 uppercase">
           Founder & CEO
@@ -284,22 +288,25 @@ function About(){
         </p>
 
         
-        <ul className="flex flex-col sm:flex-row gap-8 pt-6">
-          <li className="flex flex-col items-start">
+        <ul className="flex flex-col sm:flex-row
+          gap-8 pt-6
+          items-center lg:items-start
+          text-center lg:text-left">
+          <li className="flex flex-col items-center lg:items-start">
             <span className="text-3xl font-bold text-black">12+</span>
             <h3 className="text-sm font-medium text-gray-600">
               Years of Leadership
             </h3>
           </li>
 
-          <li className="flex flex-col items-start">
+          <li className="flex flex-col items-center lg:items-start">
             <span className="text-3xl font-bold text-black">600+</span>
             <h3 className="text-sm font-medium text-gray-600">
               Collaborations Enabled
             </h3>
           </li>
 
-          <li className="flex flex-col items-start">
+          <li className="flex flex-col items-center lg:items-start">
             <span className="text-3xl font-bold text-black">100%</span>
             <h3 className="text-sm font-medium text-gray-600">
               Commitment to Impact
@@ -315,14 +322,14 @@ function About(){
 
 
             <div className="w-full pt-10" >
-                    <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-32 text-center">
+                    <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-32 text-center">
                                 <span className="text-[#1C1C25]  text-xl sm:text-2xl font-bold">
                                     Advisory Team
                                 </span>
             
                                 <p className="
                                 text-black 
-                                text-sm sm:text-lg md:text-xl 
+                                text-sm sm:text-lg lg:text-xl 
                                 
                                 pt-4 pb-6
                                 max-w-3xl
@@ -332,7 +339,7 @@ function About(){
                                 </p>
                                 
                             </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-8 p-4 sm:px-6 md:px-12 lg:px-24">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-8 p-4 sm:px-6 lg:px-12 lg:px-24">
                             <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
                                     
                                     <img src="/image/rakesh-sir.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
@@ -387,14 +394,14 @@ function About(){
             </div>
             
             <div className="w-full pt-10">
-                    <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-32 text-center">
+                    <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-32 text-center">
                                 <span className="text-[#1C1C25]  text-xl sm:text-2xl font-bold">
                                     Our Core Team
                                 </span>
             
                                 <p className="
                                 text-black 
-                                text-sm sm:text-lg md:text-xl 
+                                text-sm sm:text-lg lg:text-xl 
                                 
                                 pt-4 pb-6
                                 max-w-3xl
@@ -404,7 +411,7 @@ function About(){
                                 </p>
                                 
                             </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-8 p-4 sm:px-6 md:px-12 lg:px-24">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-8 p-4 sm:px-6 lg:px-12 lg:px-24">
                             <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
                                     
                                     <img src="/image/core-team2.jpg" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
@@ -479,8 +486,8 @@ function About(){
              
 
             <div className="w-full pt-20 pb-20">
-                    <div className="container p-4 sm:px-6 md:px-10 lg:px-24">
-                            <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-24">
+                    <div className="container p-4 sm:px-6 lg:px-10 lg:px-24">
+                            <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-24">
                                     <div className="flex flex-col items-center justify-center">
                                         <span className="text-[#76e366]  text-xl sm:text-2xl font-bold">
                                             OUR TESTIMONIAL
@@ -488,9 +495,9 @@ function About(){
 
                                         <p className="
                                         text-black 
-                                        text-2xl sm:text-3xl md:text-4xl text-center
+                                        text-2xl sm:text-3xl lg:text-4xl text-center
                                         font-bold 
-                                        sm:px-6 md:px-10 lg:px-24
+                                        sm:px-6 lg:px-10 lg:px-24
                                         pt-3 pb-6
                                         max-w-3xl
                                         
@@ -571,13 +578,13 @@ function About(){
             <div className="w-full bg-[#f9fafb]">
   <div className="container mx-auto">
 
-    <div className="flex flex-col md:flex-row gap-12 
-                    px-4 sm:px-6 md:px-12 
+    <div className="flex flex-col lg:flex-row gap-12 
+                    px-4 sm:px-6 lg:px-12 
                     pt-24 pb-20 w-full items-center">
 
       
       <div className="flex flex-col items-start justify-start 
-                      md:w-1/2 w-full gap-5">
+                      lg:w-1/2 w-full gap-5">
 
         <span className="text-sm font-bold tracking-widest text-blue-500">
           FREQUENTLY ASKED QUESTIONS
@@ -627,7 +634,7 @@ function About(){
             <input
               type="text"
               name="name"
-              className="w-full border border-gray-300 rounded-md 
+              className="w-full border border-gray-300 rounded-lg 
                          px-4 py-2 font-medium 
                          focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -638,7 +645,7 @@ function About(){
             <input
               type="email"
               name="email"
-              className="w-full border border-gray-300 rounded-md 
+              className="w-full border border-gray-300 rounded-lg 
                          px-4 py-2 font-medium 
                          focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -649,7 +656,7 @@ function About(){
             <input
               type="text"
               name="mobile"
-              className="w-full border border-gray-300 rounded-md 
+              className="w-full border border-gray-300 rounded-lg 
                          px-4 py-2 font-medium 
                          focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -660,7 +667,7 @@ function About(){
             <input
               type="text"
               name="subject"
-              className="w-full border border-gray-300 rounded-md 
+              className="w-full border border-gray-300 rounded-lg 
                          px-4 py-2 font-medium 
                          focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -671,7 +678,7 @@ function About(){
             <textarea
               name="address"
               rows="3"
-              className="w-full border border-gray-300 rounded-md 
+              className="w-full border border-gray-300 rounded-lg 
                          px-4 py-2 font-medium 
                          focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -694,7 +701,7 @@ function About(){
       </div>
 
       
-      <div className="md:w-1/2 w-full flex justify-center">
+      <div className="lg:w-1/2 w-full flex justify-center">
         <img
           src="/image/faq.png"
           alt="Contact"
@@ -707,7 +714,7 @@ function About(){
 </div>
             
              <div className="w-full pt-10 pb-10">
-                <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-20">
+                <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-20">
                     <div className="flex flex-col items-center justify-center">
                                                     <span className="text-[#76e366]  text-xl sm:text-2xl font-bold">
                                                         WHAT WE DO
@@ -715,9 +722,9 @@ function About(){
             
                                                     <p className="
                                                     text-black 
-                                                    text-2xl sm:text-3xl md:text-4xl text-center
+                                                    text-2xl sm:text-3xl lg:text-4xl text-center
                                                     font-bold 
-                                                    sm:px-6 md:px-10 lg:px-24
+                                                    sm:px-6 lg:px-10 lg:px-24
                                                     pt-3 pb-6
                                                     max-w-3xl
                                                     
@@ -810,7 +817,7 @@ function About(){
             <div className="w-full pt-28 pb-20 bg-[#f9fafb]">
   <div className="container mx-auto">
 
-    <div className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-10">
+    <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-10">
 
       
       <div className="flex flex-col items-center justify-center text-center max-w-3xl">
@@ -818,7 +825,7 @@ function About(){
           NEWSLETTER
         </span>
 
-        <p className="text-black text-2xl sm:text-3xl md:text-4xl font-bold pt-3 pb-4">
+        <p className="text-black text-2xl sm:text-3xl lg:text-4xl font-bold pt-3 pb-4">
           Join the Samadhantra Newsletter
         </p>
 
@@ -846,7 +853,7 @@ function About(){
           className="bg-blue-500 hover:bg-blue-600 
                      text-white font-semibold 
                      rounded-xl px-6 py-3 
-                     transition shadow-md"
+                     transition shadow-lg"
         >
           Subscribe to Updates
         </button>
@@ -859,8 +866,8 @@ function About(){
 
 
                        <div className='w-full bg-white text-black'>
-                              <div className='flex flex-col items-start justify-start gap-2 sm:p-2 md:px-4  w-full '>
-                                  <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  items-start justify-between sm:px-4 md:px-8 lg:px-8 p-2 md:py-16 w-full'>
+                              <div className='flex flex-col items-start justify-start gap-2 sm:p-2 lg:px-4  w-full '>
+                                  <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  items-start justify-between sm:px-4 lg:px-8 lg:px-8 p-2 lg:py-16 w-full'>
                                       <div className='flex flex-col items-start justify-start gap-6 p-6 '>
                                             <img src="/image/samadhantra-footer-logo.jpeg" alt="" height="70" width="120"/>
                                             <p className='text-black text-sm '>One platform, Every stakeholder, Connecting needs with the right solutions.</p>
@@ -892,7 +899,7 @@ function About(){
                                       </div>
                                       
                                       <div className='flex flex-col items-start justify-start gap-6 p-6 '>
-                                            <h3 className='text-black text-lg md:text-2xl font-bold'>Quick Links</h3>
+                                            <h3 className='text-black text-lg lg:text-2xl font-bold'>Quick Links</h3>
                                             
                                             <ul className='flex flex-col items-start justify-start gap-4 '>
                                                 <li className='text-black text-lg  cursor-pointer'><a href="/">Home</a></li>
@@ -906,7 +913,7 @@ function About(){
                                       </div>
             
                                       <div className='flex flex-col items-start justify-start gap-6 p-6 '>
-                                            <h3 className='text-black text-lg md:text-2xl font-bold'>More</h3>
+                                            <h3 className='text-black text-lg lg:text-2xl font-bold'>More</h3>
                                              <ul className='flex flex-col items-start justify-start gap-4 '>
                                                 <li className='text-black text-lg  cursor-pointer'><a href="/stake">Stakeholder</a></li>
                                                 <li className='text-black text-lg  cursor-pointer'><a href="/contact">FAQ</a> </li>
@@ -919,7 +926,7 @@ function About(){
                                       
             
                                       <div className='flex flex-col items-start justify-start gap-6 p-6  '>
-                                            <h3 className='text-black text-lg md:text-2xl font-bold'>Events</h3>
+                                            <h3 className='text-black text-lg lg:text-2xl font-bold'>Events</h3>
                                              <ul className='grid grid-cols-3 items-start justify-start gap-4 '>
                                                 <li className=' cursor-pointer'>
                                                     <img src="/image/blog-img1.jpg" alt="" height="70" width="120" />
@@ -949,7 +956,7 @@ function About(){
                               </div> 
                                                  
                          </div>
-                         <div className='bg-[#0A2F66] text-white flex flex-wrap items-center justify-center gap-2 p-3  sm:px-6 md:px-12 lg:px-16  w-full'>
+                         <div className='bg-[#0A2F66] text-white flex flex-wrap items-center justify-center gap-2 p-3  sm:px-6 lg:px-12 lg:px-16  w-full'>
                                  <span className='text-[#ffffff] text-sm'>Copyright © 2026 Samadhantra. All Rights Reserved by <a href="">Samadhantra</a> .</span>
                          </div>
         </>

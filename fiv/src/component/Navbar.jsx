@@ -65,7 +65,7 @@ function Navbar(){
 
                     {isSticky && <div className="h-[80px]"></div>}
 
-                    <nav className={ `flex flex-row items-center justify-between p-4 sm:px-6 lg:px-10 py-4 w-full ${isSticky ? "fixed top-0 left-0 z-50 shadow-lg" : "relative"}`}>
+                    <nav className={ `bg-white flex flex-row items-center justify-between p-4 sm:px-6 lg:px-10 py-4 w-full ${isSticky ? "fixed top-0 left-0 z-50 shadow-lg" : "relative"}`}>
                         <div>
                             <img src="/image/samadhantra-footer-logo.jpeg" alt="" height="70" width="120"/>
                         </div>
@@ -106,6 +106,7 @@ function Navbar(){
                                     
                             )}
                     </nav>
+
                 </div>
                 
         </>
