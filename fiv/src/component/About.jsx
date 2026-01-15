@@ -1,0 +1,958 @@
+import { useState } from "react";
+import { FaChevronRight, FaFacebookF, FaGear, FaInstagram, FaLinkedin, FaPeopleArrows, FaQuoteLeft, FaTwitter, FaUserGear } from "react-icons/fa6";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import Slider from "react-slick";
+function About(){
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const settings1 = {
+  dots: true,
+  arrows: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000, 
+  speed: 600,          
+  cssEase: "ease-in-out",
+};
+  const faqs = [
+    {
+      q: "Who can use Samadhantra’s support services?",
+      a: "Samadhantra supports startups, MSMEs, institutions, corporates, service providers, students, and ecosystem partners who need structured guidance and reliable solutions."
+    },
+    {
+      q: "How does Samadhantra provide support to users?",
+      a: "Support is provided through a structured process where requirements are understood, validated, and matched with the most suitable stakeholders within the ecosystem."
+    },
+    {
+      q: "Do you offer domain and website-related support?",
+      a: "Yes. Samadhantra enables access to domain registration, hosting, website development, maintenance, and related digital services through verified ecosystem partners."
+    },
+    {
+      q: "What makes Samadhantra different from traditional service platforms?",
+      a: "Unlike traditional platforms, Samadhantra focuses on demand–supply alignment and multi-stakeholder collaboration to deliver transparent, scalable, and impact-driven solutions."
+    }
+  ];
+
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+    return(
+        <>
+
+        <div className="w-full">
+                <div className="container">
+                    <div className="bg-[#faefef] flex flex-col items-center justify-center gap-6 pt-48 pb-44">
+                        <h3 className="text-7xl font-bold text-center">About Us</h3>
+                        <ul className="flex flex-row items-center justify-center gap-5">
+                            <li className="flex flex-row items-center justify-center gap-2">
+                                <a href="" className="text-2xl font-bold">Home</a>
+                                <FaChevronRight className="text-2xl font-bold" />
+                            </li>
+                            <li className="text-2xl font-bold">About Us</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+
+          <div className="w-full">
+                <div className=" flex flex-col md:flex-row gap-8 bg-slate-50 p-4 sm:px-6 md:px-10 lg:px-24  w-full">
+                    <div className="flex items-center justify-center  md:w-1/2 py-6  w-full">
+                        <img src="/image/about-img.png" alt="" className="rounded-2xl" />
+                        
+                    </div>
+                    <div className="flex flex-col items-center md:items-start text-center md:text-left justify-center gap-8  md:w-1/2 w-full ">
+                        <div className="flex flex-col gap-2">
+                            <span className="text-[#0A2F66] text-2xl font-semibold">About Samadhantra</span>
+                             <h1 className="text-4xl text-black font-bold">Where Requirements Turn into Results</h1>
+                        
+                        </div>
+                        <div className="flex flex-wrap md:items-start md:justify-start items-center justify-center gap-4">
+                            <p>Samadhantra is a unified solution system designed to fulfil demand and supply for all stakeholders through a structured, transparent, and collaborative platform.</p>
+                            <p> We bring together individuals, institutions, service providers, industry, academia, NGOs, and government bodies to create an ecosystem where requirements are clearly identified, resources are efficiently aligned, and solutions are effectively delivered.</p>
+                            <p>Samadhantra is not just a platform—it is a system that enables collaboration, trust, and sustainable outcomes across sectors.</p>
+
+                        </div>
+                        <div className="flex flex-col md:items-start md:justify-start gap-4">
+                            <div className="flex flex-row md:items-start md:justify-start gap-4">
+                                <h3 className="text-lg font-bold">One Platform, Every Stakeholder</h3>
+                                <h3 className="text-lg font-bold">Smart & Faster Solution Discovery</h3>
+                            </div>
+                            <div className="flex flex-row md:items-start md:justify-start gap-4">
+                                <h3 className="text-lg font-bold">Reduced Complexity, Better Execution</h3>
+                                <h3 className="text-lg font-bold">Seamless Collaboration Across Ecosystem</h3>
+                            </div>
+                        </div>
+                        <div className="flex flex-wrap items-start justify-start gap-4">
+                            <a href="" className="bg-green-400 text-white rounded-4xl px-4 py-3">Know More About Samadhantra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-center w-full pt-10">
+                        <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-32 text-center">
+                            <h2 className="text-black  text-xl sm:text-2xl md:text-3xl font-bold">
+                               How Samadhantra Creates Impact
+                            </h2>
+        
+                            <p className="
+                            text-gray-700 
+                            text-lg
+                             
+                            pt-3 pb-6
+                            max-w-3xl
+                            
+                        ">
+                               Connecting requirements with the right stakeholders through a structured ecosystem
+                            </p>
+                            
+                        </div>
+
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-16 lg:px-28 pt-8 pb-28">
+
+                                <div className="flex flex-col rounded-2xl border border-gray-300 overflow-hidden">
+                                    <img src="/image/vision.jpg" alt="Vision" className="w-full" />
+
+                                    <div className="p-6">
+                                        <span className="block text-center font-semibold text-lg mb-4">
+                                            Our Vision
+                                        </span>
+
+                                        <ul className="list-disc list-outside pl-6 text-black space-y-2">
+                                            <li>
+                                            To become India’s most trusted multi-stakeholder solution ecosystem—enabling seamless alignment of demand and supply to drive inclusive growth and collective progress.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                
+                                <div className="flex flex-col rounded-2xl border border-gray-300 overflow-hidden">
+                                    <img src="/image/mission.jpg" alt="Mission" className="w-full" />
+
+                                    <div className="p-6">
+                                    <span className="block text-center font-semibold text-lg mb-4">
+                                        Our Mission
+                                    </span>
+
+                                    <ul className="list-disc list-outside pl-6 text-black space-y-2 ">
+                                        <li>To create a structured system that connects needs with the right solutions</li>
+                                        <li>To enable collaboration across sectors and stakeholders</li>
+                                        <li>To ensure transparency, efficiency, and fulfilment in every engagement</li>
+                                    </ul>
+                                    </div>
+                                </div>
+
+                          </div>
+             </div>
+
+             <div className="flex flex-col items-center justify-center w-full pt-10">
+                            <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-32 text-center">
+                                <span className="text-[#49981e]  text-xl sm:text-2xl font-bold">
+                                    WHY SAMADHANTRA
+                                </span>
+            
+                                <p className="
+                                text-black 
+                                text-2xl sm:text-3xl md:text-4xl 
+                                font-bold 
+                                pt-3 pb-6
+                                max-w-3xl
+                                
+                            ">
+                                    A Unified Solution Ecosystem for Every Stakeholder
+                                </p>
+                                
+                            </div>
+            
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-16 pt-8 pb-28">
+            
+            
+                                <div className="bg-[#faefef] rounded-2xl p-6 flex flex-col items-start gap-4 
+                              hover:shadow-md transition">
+            
+                                    <div className="w-12 h-12 rounded-full bg-white 
+                                flex items-center justify-center">
+                                        <FaGear className="text-[#0A5585] text-xl" />
+                                    </div>
+            
+                                    <h3 className="text-2xl font-bold text-black">
+                                        Unified Solution System
+                                    </h3>
+            
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        One integrated platform that brings together demand creators and solution providers across sectors.
+                                    </p>
+                                </div>
+            
+            
+                                <div className="bg-[#faefef] rounded-2xl p-6 flex flex-col items-start gap-4 
+                              hover:shadow-md transition">
+            
+                                    <div className="w-12 h-12 rounded-full bg-white 
+                                flex items-center justify-center">
+                                        <FaPeopleArrows className="text-[#0A5585] text-xl" />
+                                    </div>
+            
+                                    <h3 className="text-2xl font-bold text-black">
+                                        Demand–Supply Alignment
+                                    </h3>
+            
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        Structured matching of requirements with the right services, products, and partners for faster fulfilment.
+                                    </p>
+                                </div>
+            
+            
+                                <div className="bg-[#faefef] rounded-2xl p-6 flex flex-col items-start gap-4 
+                              hover:shadow-md transition">
+            
+                                    <div className="w-12 h-12 rounded-full bg-white 
+                                flex items-center justify-center">
+                                        <FaUserGear className="text-[#0A5585] text-xl" />
+                                    </div>
+            
+                                    <h3 className="text-2xl font-bold text-black">
+                                        Multi-Stakeholder Ecosystem
+                                    </h3>
+            
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        Designed for individuals, institutions, industry, government bodies, and service providers to collaborate seamlessly.
+                                    </p>
+                                </div>
+            
+            
+                                
+            
+                            </div>
+            
+                        </div>
+
+            <div className="w-full pt-16">
+
+ 
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 text-center">
+    <span className="text-[#6ce36c] text-xl sm:text-2xl font-bold">
+      LEADERSHIP
+    </span>
+
+    <p className="text-black text-xl sm:text-2xl md:text-4xl 
+                  font-bold pt-4 pb-10">
+      Founder & CEO
+    </p>
+  </div>
+
+
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-24">
+    <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+
+     
+      <div className="shrink-0">
+        <img
+          src="/image/ramesh-sir.png"
+          alt="Dr. Ramesh"
+          className="w-72 h-72 rounded-3xl object-cover shadow-lg"
+        />
+      </div>
+
+      
+      <div className="flex flex-col items-start gap-4">
+
+        <span className="text-sm font-semibold text-gray-500 uppercase">
+          Founder & CEO
+        </span>
+
+        <span className="text-2xl font-bold text-black">
+          Dr. Ramesh
+        </span>
+
+        <p className="text-gray-600 max-w-2xl leading-relaxed">
+          With deep-rooted experience in building collaborative ecosystems,
+          Mr. Rajiv Sharma leads Samadhantra with a mission to bridge real
+          requirements with the right solutions. His leadership focuses on
+          transparency, trust, and long-term value creation across industries
+          and communities.
+        </p>
+
+        <p className="text-gray-700 ">
+          “When the right people connect with the right purpose, meaningful impact follows”
+        </p>
+
+        
+        <ul className="flex flex-col sm:flex-row gap-8 pt-6">
+          <li className="flex flex-col items-start">
+            <span className="text-3xl font-bold text-black">12+</span>
+            <h3 className="text-sm font-medium text-gray-600">
+              Years of Leadership
+            </h3>
+          </li>
+
+          <li className="flex flex-col items-start">
+            <span className="text-3xl font-bold text-black">600+</span>
+            <h3 className="text-sm font-medium text-gray-600">
+              Collaborations Enabled
+            </h3>
+          </li>
+
+          <li className="flex flex-col items-start">
+            <span className="text-3xl font-bold text-black">100%</span>
+            <h3 className="text-sm font-medium text-gray-600">
+              Commitment to Impact
+            </h3>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+            <div className="w-full pt-10" >
+                    <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-32 text-center">
+                                <span className="text-[#1C1C25]  text-xl sm:text-2xl font-bold">
+                                    Advisory Team
+                                </span>
+            
+                                <p className="
+                                text-black 
+                                text-sm sm:text-lg md:text-xl 
+                                
+                                pt-4 pb-6
+                                max-w-3xl
+                                
+                            ">
+                                    Guiding Samadhantra with strategic expertise and experience
+                                </p>
+                                
+                            </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-8 p-4 sm:px-6 md:px-12 lg:px-24">
+                            <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
+                                    
+                                    <img src="/image/rakesh-sir.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+
+                                    <div className="p-6 flex flex-col  items-center justify-center gap-2">
+                                        <span className="text-[#16315a] block  font-semibold text-lg ">
+                                           Rakesh Gupta
+                                        </span>
+                                        <p>
+                                           Executive Advisor
+                                            </p>
+
+                                            
+                                       
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
+                                    
+                                    <img src="/image/priyanka mam.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+
+                                    <div className="p-6 flex flex-col items-center justify-center gap-2">
+                                        <span className="text-[#16315a] block  font-semibold text-lg ">
+                                            Priyanka Sarathe
+                                        </span>
+                                        <p>
+                                            Executive Advisor
+
+                                            </p>
+                                            
+                                        
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
+                                    
+                                    <img src="/image/vikash-sir.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+
+                                    <div className="p-6 flex flex-col items-center justify-center gap-2">
+                                        <span className="text-[#16315a] block  font-semibold text-lg ">
+                                           Vikash Gupta
+                                        </span>
+                                        <p>
+                                          Executive Advisor
+
+                                            </p>
+                                            
+                                        
+                                    </div>
+                                </div>
+                    </div>
+            </div>
+            
+            <div className="w-full pt-10">
+                    <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-32 text-center">
+                                <span className="text-[#1C1C25]  text-xl sm:text-2xl font-bold">
+                                    Our Core Team
+                                </span>
+            
+                                <p className="
+                                text-black 
+                                text-sm sm:text-lg md:text-xl 
+                                
+                                pt-4 pb-6
+                                max-w-3xl
+                                
+                            ">
+                                    Professionals working together to deliver excellence
+                                </p>
+                                
+                            </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-8 p-4 sm:px-6 md:px-12 lg:px-24">
+                            <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
+                                    
+                                    <img src="/image/core-team2.jpg" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+
+                                    <div className="p-6 flex flex-col  items-center justify-center gap-2">
+                                        <span className="text-[#16315a] block  font-semibold text-lg ">
+                                           Prakash Rao
+                                        </span>
+                                        <p className="text-center">
+                                           Ecosystem Partnerships Lead
+                                            </p>
+
+                                            
+                                       
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
+                                    
+                                    <img src="/image/core-team3.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+
+                                    <div className="p-6 flex flex-col items-center justify-center gap-2">
+                                        <span className="text-[#16315a] block  font-semibold text-lg ">
+                                           Nidhi Joshi
+                                        </span>
+                                        <p className="text-center">
+                                            Product & Platform Manager
+
+                                            </p>
+                                            
+                                        
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
+                                    
+                                    <img src="/image/core-team2.jpg" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+
+                                    <div className="p-6 flex flex-col items-center justify-center gap-2">
+                                        <span className="text-[#16315a] block  font-semibold text-lg ">
+                                           Aarav Malhotra
+                                        </span>
+                                        <p className="text-center">
+                                         Growth & Communications Manager
+
+                                            </p>
+                                            
+                                        
+                                    </div>
+                                </div>
+
+                                 <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
+                                    
+                                    <img src="/image/core-team3.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+
+                                    <div className="p-6 flex flex-col items-center justify-center gap-2">
+                                        <span className="text-[#16315a] block  font-semibold text-lg ">
+                                           Pooja Deshpande
+
+                                        </span>
+                                        <p className="px-4">
+                                          Quality Analyst
+
+                                            </p>
+                                            
+                                        
+                                    </div>
+                                </div>
+                    </div>
+            </div>
+            
+             
+
+            <div className="w-full pt-20 pb-20">
+                    <div className="container p-4 sm:px-6 md:px-10 lg:px-24">
+                            <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-24">
+                                    <div className="flex flex-col items-center justify-center">
+                                        <span className="text-[#76e366]  text-xl sm:text-2xl font-bold">
+                                            OUR TESTIMONIAL
+                                        </span>
+
+                                        <p className="
+                                        text-black 
+                                        text-2xl sm:text-3xl md:text-4xl text-center
+                                        font-bold 
+                                        sm:px-6 md:px-10 lg:px-24
+                                        pt-3 pb-6
+                                        max-w-3xl
+                                        
+                                    ">
+                                            Connecting needs with the right solutions—through real experiences
+                                        </p>
+                                    </div>
+                                   
+                            </div>
+                            <div className="   min-h-[450px] w-full ">
+                                        <Slider {...settings1}>
+                                            <div>
+                                                <div className="flex flex-col items-center justify-center gap-6">
+                                        
+                                                    <FaQuoteLeft className="text-9xl text-[#0A5585]" />
+                                                    <p className="text-lg text-black text-center font-semibold px-40">"Samadhantra helped us clearly define our requirements and connect with the right partners at the right time. The structured process and transparent collaboration made execution smooth and outcome  driven." </p>
+                                                    <div className="flex flex-col items-center justify-center gap-4">
+                                                            <span className="text-[#0A5585] text-2xl font-bold">Amit Sharma </span>
+                                                            <span className="text-xl text-black font-semibold">Founder, Startup / MSME </span>
+                                                            <img src="/image/testinomial-img1.jpg" alt="" className="rounded-full w-24" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            
+                                            <div>
+                                                <div className="flex flex-col items-center justify-center gap-6">
+                                        
+                                                    <FaQuoteLeft className="text-9xl text-[#0A5585]" />
+                                                    <p className="text-lg text-black text-center font-semibold px-40">"Being part of the Samadhantra ecosystem gave us access to real and relevant demand. The platform helped us collabrate with multiple stakeholders and build long-term partnerships." </p>
+                                                    <div className="flex flex-col items-center justify-center gap-4">
+                                                            <span className="text-[#0A5585] text-2xl font-bold">Rohit Malhotra </span>
+                                                            <span className="text-xl text-black font-semibold">Service Provider / Vendor Partner</span>
+                                                            <img src="/image/testinomial-img2.jpg" alt="" className="rounded-full w-24" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div>
+                                                <div className="flex flex-col items-center justify-center gap-6">
+                                        
+                                                    <FaQuoteLeft className="text-9xl text-[#0A5585]" />
+                                                    <p className="text-lg text-black text-center font-semibold px-40 ">"Samadhantra helped us clearly define our requirements and connect with the right partners at the right time. The structured process and transparent collaboration made execution smooth and outcome  driven." </p>
+                                                    <div className="flex flex-col items-center justify-center gap-4">
+                                                            <span className="text-[#0A5585] text-2xl font-bold">Amit Sharma </span>
+                                                            <span className="text-xl text-black font-semibold">Founder, Startup / MSME </span>
+                                                            <img src="/image/testinomial-img1.jpg" alt="" className="rounded-full w-24" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div>
+                                                <div className="flex flex-col items-center justify-center gap-6">
+                                        
+                                                    <FaQuoteLeft className="text-9xl text-[#0A5585]" />
+                                                    <p className="text-lg text-black text-center font-semibold px-40">"Being part of the Samadhantra ecosystem gave us access to real and relevant demand. The platform helped us collabrate with multiple stakeholders and build long-term partnerships." </p>
+                                                    <div className="flex flex-col items-center justify-center gap-4">
+                                                            <span className="text-[#0A5585] text-2xl font-bold">Rohit Malhotra </span>
+                                                            <span className="text-xl text-black font-semibold">Service Provider / Vendor Partner</span>
+                                                            <img src="/image/testinomial-img2.jpg" alt="" className="rounded-full w-24" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            
+                                            
+                                        </Slider>
+
+                                    </div>
+                    </div>
+            </div>
+
+           
+
+
+            <div className="w-full bg-[#f9fafb]">
+  <div className="container mx-auto">
+
+    <div className="flex flex-col md:flex-row gap-12 
+                    px-4 sm:px-6 md:px-12 
+                    pt-24 pb-20 w-full items-center">
+
+      
+      <div className="flex flex-col items-start justify-start 
+                      md:w-1/2 w-full gap-5">
+
+        <span className="text-sm font-bold tracking-widest text-blue-500">
+          FREQUENTLY ASKED QUESTIONS
+        </span>
+
+        <h1 className="text-4xl font-extrabold text-gray-900 leading-tight">
+          Answers That Help You Move Forward
+        </h1>
+
+        <p className="text-gray-600 font-medium max-w-xl">
+          Samadhantra connects your questions with the right experts and ecosystem partners—so you can move forward with confidence.
+        </p>
+        
+        <div className="flex flex-col gap-4">
+      {faqs.map((item, index) => (
+        <div
+          key={index}
+          className="border border-gray-300 rounded-lg"
+        >
+         
+          <button
+            onClick={() => toggle(index)}
+            className="w-full flex items-center justify-between
+              px-5 py-4 text-left font-semibold text-lg
+              hover:bg-gray-50"
+          >
+            <span>{item.q}</span>
+            <span className="text-2xl font-bold">
+              {openIndex === index ? "−" : "+"}
+            </span>
+          </button>
+
+         
+          {openIndex === index && (
+            <div className="px-5 pb-4 text-gray-700 text-base">
+              {item.a}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  
+        {/* <form className="w-full flex flex-col gap-4 pt-4">
+
+          <div className="flex items-start gap-4">
+            <label className="w-28 font-semibold text-gray-700">Name</label>
+            <input
+              type="text"
+              name="name"
+              className="w-full border border-gray-300 rounded-md 
+                         px-4 py-2 font-medium 
+                         focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <div className="flex items-start gap-4">
+            <label className="w-28 font-semibold text-gray-700">Email</label>
+            <input
+              type="email"
+              name="email"
+              className="w-full border border-gray-300 rounded-md 
+                         px-4 py-2 font-medium 
+                         focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <div className="flex items-start gap-4">
+            <label className="w-28 font-semibold text-gray-700">Mobile</label>
+            <input
+              type="text"
+              name="mobile"
+              className="w-full border border-gray-300 rounded-md 
+                         px-4 py-2 font-medium 
+                         focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <div className="flex items-start gap-4">
+            <label className="w-28 font-semibold text-gray-700">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              className="w-full border border-gray-300 rounded-md 
+                         px-4 py-2 font-medium 
+                         focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <div className="flex items-start gap-4">
+            <label className="w-28 font-semibold text-gray-700">Address</label>
+            <textarea
+              name="address"
+              rows="3"
+              className="w-full border border-gray-300 rounded-md 
+                         px-4 py-2 font-medium 
+                         focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+        </form> */}
+
+       
+        {/* <div className="flex items-start gap-3 text-sm font-medium text-gray-700 pt-2">
+          <input type="checkbox" className="mt-1 accent-blue-600" />
+          <span>Accept Terms & Conditions and Privacy Policy.</span>
+        </div> */}
+
+       
+        <div className="w-44 rounded-xl px-4 py-2.5 
+                        bg-blue-600 text-white font-semibold 
+                        text-center cursor-pointer 
+                        hover:bg-blue-700 transition">
+          Read More
+        </div>
+      </div>
+
+      
+      <div className="md:w-1/2 w-full flex justify-center">
+        <img
+          src="/image/faq.png"
+          alt="Contact"
+          className="w-full max-w-xl object-contain"
+        />
+      </div>
+
+    </div>
+  </div>
+</div>
+            
+             <div className="w-full pt-10 pb-10">
+                <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-20">
+                    <div className="flex flex-col items-center justify-center">
+                                                    <span className="text-[#76e366]  text-xl sm:text-2xl font-bold">
+                                                        WHAT WE DO
+                                                    </span>
+            
+                                                    <p className="
+                                                    text-black 
+                                                    text-2xl sm:text-3xl md:text-4xl text-center
+                                                    font-bold 
+                                                    sm:px-6 md:px-10 lg:px-24
+                                                    pt-3 pb-6
+                                                    max-w-3xl
+                                                    
+                                                ">
+                                                       Our End-to-End Solution Process
+
+                                                    </p>
+                                                </div>
+                      <div className="grid grid-cols-1  lg:grid-cols-3 items-center justify-center gap-8 pt-8 pb-8 ">
+                            <div className="flex flex-col items-center justify-start gap-6">
+                                    <div className="flex flex-row gap-3 lg:pl-20 ">
+                                         <div className="w-14 h-14 aspect-square rounded-full  bg-[#51993C] 
+                                                flex items-center justify-center
+                                                text-[#0A5585] text-2xl font-bold leading-none">
+                                                1
+                                            </div>
+                                            <div className="flex flex-col gap-3">
+                                                    <span className="text-3xl font-bold">Identify the Requirement</span>
+                                                    <p className="text-lg">Clearly understand and define the stakeholder’s exact need.</p>
+                                            </div>
+                                    </div>
+                                    <div className="flex flex-row gap-3">
+                                         <div className="w-14 h-14 aspect-square rounded-full  bg-[#51993C] 
+                                                flex items-center justify-center
+                                                text-[#0A5585] text-2xl font-bold leading-none ">
+                                                2
+                                            </div>
+                                            <div className="flex flex-col gap-3">
+                                                    <span className="text-3xl font-bold">Requirement Analysis</span>
+                                                    <p className="text-lg">Assess scope, feasibility, priorities, and constraints.</p>
+                                            </div>
+                                    </div>
+                                    <div className="flex flex-row gap-3 lg:pl-20">
+                                         <div className="w-14 h-14 aspect-square rounded-full  bg-[#51993C] 
+                                                flex items-center justify-center
+                                                text-[#0A5585] text-xl font-bold leading-none">
+                                                3
+                                            </div>
+                                            <div className="flex flex-col gap-3">
+                                                    <span className="text-3xl font-bold">Stakeholder Matching</span>
+                                                    <p className="text-lg">Identify and connect with the most relevant partners.</p>
+                                            </div>
+                                    </div>
+                            </div>
+
+                             <div className="flex flex-col gap-6 items-center">
+                                    <img src="/image/what-we-do-img.png" alt="" className="object-contain"/>
+                            </div>
+                            <div className="flex flex-col items-center justify-start gap-6">
+                                    <div className="flex flex-row gap-3 ">
+                                         <div className="w-14 h-14 aspect-square rounded-full  bg-[#51993C] 
+                                                flex items-center justify-center
+                                                text-[#0A5585] text-xl font-bold leading-none">
+                                                4
+                                            </div>
+                                            <div className="flex flex-col gap-3">
+                                                    <span className="text-3xl font-bold">Solution Planning</span>
+                                                    <p className="text-lg">Design a customized, actionable solution roadmap</p>
+                                            </div>
+                                    </div>
+                                    <div className="flex flex-row gap-3 lg:pl-16">
+                                         <div className="w-14 h-14 aspect-square rounded-full  bg-[#51993C] 
+                                                flex items-center justify-center
+                                                text-[#0A5585] text-xl font-bold leading-none">
+                                                5
+                                            </div>
+                                            <div className="flex flex-col gap-3">
+                                                    <span className="text-3xl font-bold">Execution & Coordination</span>
+                                                    <p className="text-lg">Enable smooth execution through coordinated collaboration.</p>
+                                            </div>
+                                    </div>
+                                    <div className="flex flex-row gap-3 ">
+                                         <div className="w-14 h-14 aspect-square rounded-full  bg-[#51993C] 
+                                                flex items-center justify-center
+                                                text-[#0A5585] text-xl font-bold leading-none">
+                                                6
+                                            </div>
+                                            <div className="flex flex-col gap-2">
+                                                    <span className="text-3xl font-bold">Delivery & Outcomes</span>
+                                                    <p className="text-lg">Deliver results with measurable impact and accountability.</p>
+                                            </div>
+                                    </div>
+                            </div>
+                      </div>
+
+                </div>
+
+            </div>
+
+            <div className="w-full pt-28 pb-20 bg-[#f9fafb]">
+  <div className="container mx-auto">
+
+    <div className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-10">
+
+      
+      <div className="flex flex-col items-center justify-center text-center max-w-3xl">
+        <span className="text-[#76e366] text-xl sm:text-2xl font-bold">
+          NEWSLETTER
+        </span>
+
+        <p className="text-black text-2xl sm:text-3xl md:text-4xl font-bold pt-3 pb-4">
+          Join the Samadhantra Newsletter
+        </p>
+
+        <p className="text-gray-600 font-medium pb-8">
+          Get ecosystem insights, collaboration opportunities, platform updates,
+          and stories from startups, institutions, and partners—straight to your inbox.
+        </p>
+      </div>
+
+      
+      <form className="flex flex-col  items-center gap-4 w-full max-w-xl">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          className="w-full bg-white border border-gray-300 
+                     rounded-full px-5 py-3 
+                     text-gray-700 font-medium 
+                     shadow-sm
+                     focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+
+        <button
+          type="submit"
+          className="bg-blue-500 hover:bg-blue-600 
+                     text-white font-semibold 
+                     rounded-xl px-6 py-3 
+                     transition shadow-md"
+        >
+          Subscribe to Updates
+        </button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+
+                       <div className='w-full bg-white text-black'>
+                              <div className='flex flex-col items-start justify-start gap-2 sm:p-2 md:px-4  w-full '>
+                                  <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  items-start justify-between sm:px-4 md:px-8 lg:px-8 p-2 md:py-16 w-full'>
+                                      <div className='flex flex-col items-start justify-start gap-6 p-6 '>
+                                            <img src="/image/samadhantra-footer-logo.jpeg" alt="" height="70" width="120"/>
+                                            <p className='text-black text-sm '>One platform, Every stakeholder, Connecting needs with the right solutions.</p>
+                                            <ul className='flex flex-wrap items-start justify-start gap-4 '>
+                                                <li>
+                                                    <a href="https://www.linkedin.com/" target="_blank"> 
+                                                        <FaLinkedin />
+            
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.twitter.com/" target="_blank"> 
+                                                        <FaTwitter />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.instagram.com/" target="_blank"> 
+                                                        <FaInstagram />
+            
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.facebook.com/" target="_blank"> 
+                                                        <FaFacebookF />
+                                                    </a>
+                                                </li>
+                                                
+                                            </ul>
+                                      </div>
+                                      
+                                      <div className='flex flex-col items-start justify-start gap-6 p-6 '>
+                                            <h3 className='text-black text-lg md:text-2xl font-bold'>Quick Links</h3>
+                                            
+                                            <ul className='flex flex-col items-start justify-start gap-4 '>
+                                                <li className='text-black text-lg  cursor-pointer'><a href="/">Home</a></li>
+                                                <li className='text-black text-lg  cursor-pointer'><a href="/about">About</a></li>
+                                                <li className='text-black text-lg  cursor-pointer'><a href="/service">Service</a></li>
+                                                <li className='text-black text-lg  cursor-pointer'><a href="/blog">Blog</a></li>
+                                                <li className='text-black text-lg  cursor-pointer'><a href="/contact">Contact Us</a></li>
+                                                
+                                                
+                                            </ul>
+                                      </div>
+            
+                                      <div className='flex flex-col items-start justify-start gap-6 p-6 '>
+                                            <h3 className='text-black text-lg md:text-2xl font-bold'>More</h3>
+                                             <ul className='flex flex-col items-start justify-start gap-4 '>
+                                                <li className='text-black text-lg  cursor-pointer'><a href="/stake">Stakeholder</a></li>
+                                                <li className='text-black text-lg  cursor-pointer'><a href="/contact">FAQ</a> </li>
+                                                <li className='text-black text-lg  cursor-pointer'><a href="/event">Privacy policy</a></li>
+                                                <li className='text-black text-lg  cursor-pointer'><a href="/service">Terms & condition</a></li>
+                                                
+                                            </ul>   
+            
+                                      </div>
+                                      
+            
+                                      <div className='flex flex-col items-start justify-start gap-6 p-6  '>
+                                            <h3 className='text-black text-lg md:text-2xl font-bold'>Events</h3>
+                                             <ul className='grid grid-cols-3 items-start justify-start gap-4 '>
+                                                <li className=' cursor-pointer'>
+                                                    <img src="/image/blog-img1.jpg" alt="" height="70" width="120" />
+                                                </li>
+                                                <li className=' cursor-pointer'>
+                                                    <img src="/image/blog-img2.jpg" alt="" height="70" width="120" />
+                                                </li>
+                                                <li className=' cursor-pointer'>
+                                                    <img src="/image/blog-img3.avif" alt="" height="70" width="120" />
+                                                </li>
+                                                <li className=' cursor-pointer'>
+                                                    <img src="/image/blog-img4.png" alt="" height="70" width="120" />
+                                                </li>
+                                                <li className=' cursor-pointer'>
+                                                    <img src="/image/blog-img5.png" alt="" height="70" width="120" />
+                                                </li>
+                                                <li className=' cursor-pointer'>
+                                                    <img src="/image/blog-img6.png" alt="" height="70" width="120" />
+                                                </li>
+                                            </ul>
+                            
+                                      </div>
+            
+                                  </div>
+                                  
+                                  
+                              </div> 
+                                                 
+                         </div>
+                         <div className='bg-[#0A2F66] text-white flex flex-wrap items-center justify-center gap-2 p-3  sm:px-6 md:px-12 lg:px-16  w-full'>
+                                 <span className='text-[#ffffff] text-sm'>Copyright © 2026 Samadhantra. All Rights Reserved by <a href="">Samadhantra</a> .</span>
+                         </div>
+        </>
+    )
+}
+export default About;
