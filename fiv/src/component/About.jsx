@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaChevronRight, FaFacebookF, FaGear, FaInstagram, FaLinkedin, FaPeopleArrows, FaQuoteLeft, FaTwitter, FaUserGear } from "react-icons/fa6";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 
 import Slider from "react-slick";
 function About(){
@@ -268,7 +267,7 @@ function About(){
             
                         </div>
 
-           <div className="w-full pt-16">
+           <div className="w-full pt-20">
 
  
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 text-center">
@@ -372,7 +371,7 @@ function About(){
 
 
 
-            <div className="w-full pt-16" >
+            <div className="w-full pt-20" >
                     <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-32 text-center">
                                 <span className="text-[#1C1C25]  text-xl sm:text-2xl font-bold">
                                     Advisory Team
@@ -462,7 +461,7 @@ function About(){
 
             </div>
             
-            <div className="w-full pt-16">
+            <div className="w-full pt-20 pb-20">
                     <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-24 text-center">
                                 <span className="text-[#1C1C25]  text-xl sm:text-2xl font-bold">
                                     Our Core Team
@@ -577,11 +576,11 @@ function About(){
             
              
 
-            <div className="w-full pt-16 pb-20">
+             <div className="bg-[#f7fcfb] w-full pt-20 pb-20">
                     <div className=" p-4 sm:px-6 md:px-10 lg:px-24">
                             <div className="flex flex-col items-center justify-center">
                                     <div className="flex flex-col items-center justify-center">
-                                        <span className="text-[#76e366]  text-xl sm:text-2xl font-bold">
+                                        <span className="text-[#15ba68]  text-xl sm:text-2xl font-bold">
                                             OUR TESTIMONIAL
                                         </span>
 

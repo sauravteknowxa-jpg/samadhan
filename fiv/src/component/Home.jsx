@@ -1,9 +1,7 @@
 import { FaArrowLeft, FaCircleCheck, FaEllipsis, FaFacebookF, FaGear, FaGraduationCap, FaIndustry, FaInstagram, FaLaptopCode, FaLayerGroup, FaLinkedin, FaPeopleArrows, FaPeopleGroup, FaPersonCircleCheck, FaQuoteLeft, FaRocket, FaScrewdriver, FaToolbox, FaTwitter, FaUserGear } from "react-icons/fa6";
 import { IoTimeOutline } from "react-icons/io5";
 import { MdOutlinePersonOutline } from "react-icons/md";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./style.css"
+
 
 import Slider from "react-slick";
 
@@ -633,11 +631,11 @@ function Home() {
             </div>
 
             {/* section7 */}
-             <div className="w-full pt-20 pb-20">
+             <div className="bg-[#f7fcfb] w-full pt-20 pb-20">
                     <div className=" p-4 sm:px-6 md:px-10 lg:px-24">
                             <div className="flex flex-col items-center justify-center">
                                     <div className="flex flex-col items-center justify-center">
-                                        <span className="text-[#76e366]  text-xl sm:text-2xl font-bold">
+                                        <span className="text-[#15ba68]  text-xl sm:text-2xl font-bold">
                                             OUR TESTIMONIAL
                                         </span>
 
@@ -721,7 +719,7 @@ function Home() {
             </div>
 
             {/* section8 */}
-            <div className="flex flex-col items-center justify-center w-full">
+            <div className="flex flex-col items-center justify-center w-full pt-20 pb-20">
                 <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-24 text-center">
                     <span className="text-[#0A5585]  text-xl sm:text-2xl font-bold">
                         WHY SAMADHANTRA
