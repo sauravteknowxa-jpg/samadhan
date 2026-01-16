@@ -45,15 +45,69 @@ function Home() {
                 <div className=" flex flex-col lg:flex-row gap-4 bg-slate-50 px-4 sm:px-6 md:px-12 lg:px-24
    w-full">
                     <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center gap-8 py-2 sm:py-4 lg:py-12   lg:w-1/2 w-full ">
-                        <span className="text-[#0A2F66] text-lg sm:text-xl lg:text-2xl font-semibold">Samadhantra</span>
+                        <span className="text-[#0A2F66] text-lg sm:text-2xl lg:text-3xl font-semibold">Samadhantra</span>
                         <h1 className="text-4xl text-black font-bold">One Platform, Every Stakeholder</h1>
                         <p>A unified solution system that connects needs with the right services, products, and partners—efficiently, transparently, and at scale.</p>
-                        <div className="flex flex-wrap items-start justify-start gap-4">
-                            <a href="" className="bg-green-400 text-white rounded-4xl px-4 py-3">Post Your Requirements</a>
-                            <a href="" className="bg-green-400 text-white rounded-4xl px-4 py-3">Discover Opportunities</a>
-                            <a href="" className="bg-green-400 text-white rounded-4xl px-4 py-3">Partner With us</a>
-                            <a href="" className="bg-green-400 text-white rounded-4xl px-4 py-3">Track Status</a>
-                        </div>
+                        
+                        <div className="flex flex-wrap items-center justify-center lg:items-start lg:justify-start gap-4">
+  <a
+    href=""
+    className="
+      w-56 h-12
+      bg-green-400 text-white
+      rounded-full
+      flex items-center justify-center
+      text-sm font-medium
+      hover:bg-green-500 transition
+    "
+  >
+    Post Your Requirements
+  </a>
+
+  <a
+    href=""
+    className="
+      w-56 h-12
+      bg-green-400 text-white
+      rounded-full
+      flex items-center justify-center
+      text-sm font-medium
+      hover:bg-green-500 transition
+    "
+  >
+    Discover Opportunities
+  </a>
+
+  <a
+    href=""
+    className="
+      w-56 h-12
+      bg-green-400 text-white
+      rounded-full
+      flex items-center justify-center
+      text-sm font-medium
+      hover:bg-green-500 transition
+    "
+  >
+    Partner With Us
+  </a>
+
+  <a
+    href=""
+    className="
+      w-56 h-12
+      bg-green-400 text-white
+      rounded-full
+      flex items-center justify-center
+      text-sm font-medium
+      hover:bg-green-500 transition
+    "
+  >
+    Track Status
+  </a>
+</div>
+
+
                         <div>
 
                         </div>
@@ -167,38 +221,74 @@ function Home() {
 
             {/* section2 */}
             <div className="w-full">
-                <div className=" flex flex-col md:flex-row gap-8 bg-slate-50 p-4 sm:px-6 md:px-10 lg:px-24  w-full">
-                    <div className="flex items-center justify-center  md:w-1/2 py-6  w-full">
-                        <img src="/image/about-img.png" alt="" className="rounded-2xl" />
-                        
-                    </div>
-                    <div className="flex flex-col items-center md:items-start text-center md:text-left justify-center gap-8  md:w-1/2 w-full ">
+                
+                <div className=" flex flex-col lg:flex-row gap-8 bg-slate-50 p-4 sm:px-6 md:px-10 lg:px-24  w-full">
+                    <div className="flex items-center justify-center w-full lg:w-1/2">
+      <img
+        src="/image/about-img.png"
+        alt="About Samadhantra"
+        className="rounded-2xl w-full "
+      />
+    </div>
+                    <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center gap-8  lg:w-1/2 lg:py-12 w-full ">
                         <div className="flex flex-col gap-2">
                             <span className="text-[#0A2F66] text-2xl font-semibold">About Samadhantra</span>
                              <h1 className="text-4xl text-black font-bold">Where Requirements Turn into Results</h1>
                         
                         </div>
-                        <div className="flex flex-wrap md:items-start md:justify-start items-center justify-center gap-4">
-                            <p>Samadhantra is a unified solution system designed to fulfil demand and supply for all stakeholders through a structured, transparent, and collaborative platform.</p>
-                            <p> We bring together individuals, institutions, service providers, industry, academia, NGOs, and government bodies to create an ecosystem where requirements are clearly identified, resources are efficiently aligned, and solutions are effectively delivered.</p>
-                            <p>Samadhantra is not just a platform—it is a system that enables collaboration, trust, and sustainable outcomes across sectors.</p>
 
-                        </div>
-                        <div className="flex flex-col md:items-start md:justify-start gap-4">
-                            <div className="flex flex-row md:items-start md:justify-start gap-4">
-                                <h3 className="text-lg font-bold">One Platform, Every Stakeholder</h3>
-                                <h3 className="text-lg font-bold">Smart & Faster Solution Discovery</h3>
-                            </div>
-                            <div className="flex flex-row md:items-start md:justify-start gap-4">
-                                <h3 className="text-lg font-bold">Reduced Complexity, Better Execution</h3>
-                                <h3 className="text-lg font-bold">Seamless Collaboration Across Ecosystem</h3>
-                            </div>
-                        </div>
-                        <div className="flex flex-wrap items-start justify-start gap-4">
-                            <a href="" className="bg-green-400 text-white font-bold rounded-4xl px-4 py-3">Know More About Samadhantra</a>
-                        </div>
+                        <div className="flex flex-col gap-4 text-gray-700 leading-relaxed">
+        <p>
+          Samadhantra is a unified solution system designed to fulfil demand
+          and supply for all stakeholders through a structured, transparent,
+          and collaborative platform.
+        </p>
+        <p>
+          We bring together individuals, institutions, service providers,
+          industry, academia, NGOs, and government bodies to create an
+          ecosystem where requirements are clearly identified, resources are
+          efficiently aligned, and solutions are effectively delivered.
+        </p>
+        <p>
+          Samadhantra is not just a platform—it is a system that enables
+          collaboration, trust, and sustainable outcomes across sectors.
+        </p>
+      </div>
+
+    
+      <div className="flex flex-col gap-3">
+  <div className="flex flex-col sm:flex-row gap-6">
+    <h3 className="text-lg font-bold sm:w-1/2 text-center sm:text-left">
+      One Platform, Every Stakeholder
+    </h3>
+    <h3 className="text-lg font-bold sm:w-1/2 text-center sm:text-left">
+      Smart & Faster Solution Discovery
+    </h3>
+  </div>
+
+  <div className="flex flex-col sm:flex-row gap-6">
+    <h3 className="text-lg font-bold sm:w-1/2 text-center sm:text-left">
+      Reduced Complexity, Better Execution
+    </h3>
+    <h3 className="text-lg font-bold sm:w-1/2 text-center sm:text-left">
+      Seamless Collaboration Across Ecosystem
+    </h3>
+  </div>
+</div>
+
+      <div className="flex justify-center lg:justify-start">
+        <a
+          href=""
+          className="bg-green-500 hover:bg-green-600 transition text-white rounded-full px-6 py-3 font-medium"
+        >
+          Know More About Samadhantra
+        </a>
+      </div>
+      
                     </div>
                 </div>
+
+                
             </div>
 
             {/* section3 */}
@@ -543,7 +633,7 @@ function Home() {
             </div>
 
             {/* section7 */}
-            <div className="w-full pt-20 pb-20">
+             <div className="w-full pt-20 pb-20">
                     <div className=" p-4 sm:px-6 md:px-10 lg:px-24">
                             <div className="flex flex-col items-center justify-center">
                                     <div className="flex flex-col items-center justify-center">
@@ -571,7 +661,7 @@ function Home() {
                                                 <div className="flex flex-col items-center justify-center gap-6">
                                         
                                                     <FaQuoteLeft className="text-9xl text-[#0A5585]" />
-                                                    <p className="text-lg text-black text-center font-semibold px-40">"Samadhantra helped us clearly define our requirements and connect with the right partners at the right time. The structured process and transparent collaboration made execution smooth and outcome  driven." </p>
+                                                    <p className="text-lg text-black text-center font-semibold lg:px-40">"Samadhantra helped us clearly define our requirements and connect with the right partners at the right time. The structured process and transparent collaboration made execution smooth and outcome  driven." </p>
                                                     <div className="flex flex-col items-center justify-center gap-4">
                                                             <span className="text-[#0A5585] text-2xl font-bold">Amit Sharma </span>
                                                             <span className="text-xl text-black font-semibold">Founder, Startup / MSME </span>
@@ -585,7 +675,7 @@ function Home() {
                                                 <div className="flex flex-col items-center justify-center gap-6">
                                         
                                                     <FaQuoteLeft className="text-9xl text-[#0A5585]" />
-                                                    <p className="text-lg text-black text-center font-semibold px-40">"Being part of the Samadhantra ecosystem gave us access to real and relevant demand. The platform helped us collabrate with multiple stakeholders and build long-term partnerships." </p>
+                                                    <p className="text-lg text-black text-center font-semibold lg:px-40">"Being part of the Samadhantra ecosystem gave us access to real and relevant demand. The platform helped us collabrate with multiple stakeholders and build long-term partnerships." </p>
                                                     <div className="flex flex-col items-center justify-center gap-4">
                                                             <span className="text-[#0A5585] text-2xl font-bold">Rohit Malhotra </span>
                                                             <span className="text-xl text-black font-semibold">Service Provider / Vendor Partner</span>
@@ -599,7 +689,7 @@ function Home() {
                                                 <div className="flex flex-col items-center justify-center gap-6">
                                         
                                                     <FaQuoteLeft className="text-9xl text-[#0A5585]" />
-                                                    <p className="text-lg text-black text-center font-semibold px-40 ">"Samadhantra helped us clearly define our requirements and connect with the right partners at the right time. The structured process and transparent collaboration made execution smooth and outcome  driven." </p>
+                                                    <p className="text-lg text-black text-center font-semibold lg:px-40 ">"Samadhantra helped us clearly define our requirements and connect with the right partners at the right time. The structured process and transparent collaboration made execution smooth and outcome  driven." </p>
                                                     <div className="flex flex-col items-center justify-center gap-4">
                                                             <span className="text-[#0A5585] text-2xl font-bold">Amit Sharma </span>
                                                             <span className="text-xl text-black font-semibold">Founder, Startup / MSME </span>
@@ -613,7 +703,7 @@ function Home() {
                                                 <div className="flex flex-col items-center justify-center gap-6">
                                         
                                                     <FaQuoteLeft className="text-9xl text-[#0A5585]" />
-                                                    <p className="text-lg text-black text-center font-semibold px-40">"Being part of the Samadhantra ecosystem gave us access to real and relevant demand. The platform helped us collabrate with multiple stakeholders and build long-term partnerships." </p>
+                                                    <p className="text-lg text-black text-center font-semibold lg:px-40">"Being part of the Samadhantra ecosystem gave us access to real and relevant demand. The platform helped us collabrate with multiple stakeholders and build long-term partnerships." </p>
                                                     <div className="flex flex-col items-center justify-center gap-4">
                                                             <span className="text-[#0A5585] text-2xl font-bold">Rohit Malhotra </span>
                                                             <span className="text-xl text-black font-semibold">Service Provider / Vendor Partner</span>

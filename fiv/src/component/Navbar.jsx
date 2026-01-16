@@ -24,7 +24,7 @@ function Navbar(){
 
             <div className="w-full">
                     <nav className="bg-[#0A2F66] text-white hidden lg:flex flex-wrap items-center justify-between text-shadow-black p-4 sm:px-6 lg:px-10 py-4 w-full ">                       
-                            <div className="container">
+                            <div className="w-full">
                                 <div className="flex flex-row items-center sm:justify-between">
                                     <div>
                                     <ul className="flex flex-row items-center gap-6 text-white">

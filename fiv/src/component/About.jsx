@@ -44,8 +44,7 @@ function About(){
         <>
 
         <div className="w-full">
-                {/* <div className="container"> */}
-                    <div className="bg-[#faefef] flex flex-col items-center justify-center gap-6 pt-48 pb-44">
+          <div className="bg-[#faefef] flex flex-col items-center justify-center gap-6 pt-24 pb-24 lg:pt-44 lg:pb-44">
                         <h3 className="text-7xl font-bold text-center">About Us</h3>
                         <ul className="flex flex-row items-center justify-center gap-5">
                             <li className="flex flex-row items-center justify-center gap-2">
@@ -55,47 +54,83 @@ function About(){
                             <li className="text-2xl font-bold">About Us</li>
                         </ul>
                     </div>
-                {/* </div> */}
+                
         </div>
 
 
           <div className="w-full">
-                <div className=" flex flex-col lg:flex-row gap-8 bg-slate-50 p-4 sm:px-6 lg:px-10 lg:px-24  w-full">
-                    <div className="flex items-center justify-center  lg:w-1/2 py-6  w-full">
-                        <img src="/image/about-img.png" alt="" className="rounded-2xl" />
-                        
-                    </div>
-                    <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center gap-8  lg:w-1/2 w-full ">
+                
+                <div className=" flex flex-col lg:flex-row gap-8 bg-slate-50 p-4 sm:px-6 md:px-10 lg:px-24  w-full">
+                    <div className="flex items-center justify-center w-full lg:w-1/2">
+      <img
+        src="/image/about-img.png"
+        alt="About Samadhantra"
+        className="rounded-2xl w-full "
+      />
+    </div>
+                    <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center gap-8  lg:w-1/2 lg:py-12 w-full ">
                         <div className="flex flex-col gap-2">
                             <span className="text-[#0A2F66] text-2xl font-semibold">About Samadhantra</span>
                              <h1 className="text-4xl text-black font-bold">Where Requirements Turn into Results</h1>
                         
                         </div>
-                        <div className="flex flex-wrap lg:items-start lg:justify-start items-center justify-center gap-4">
-                            <p>Samadhantra is a unified solution system designed to fulfil demand and supply for all stakeholders through a structured, transparent, and collaborative platform.</p>
-                            <p> We bring together individuals, institutions, service providers, industry, academia, NGOs, and government bodies to create an ecosystem where requirements are clearly identified, resources are efficiently aligned, and solutions are effectively delivered.</p>
-                            <p>Samadhantra is not just a platform—it is a system that enables collaboration, trust, and sustainable outcomes across sectors.</p>
 
-                        </div>
-                        <div className="flex flex-col lg:items-start lg:justify-start gap-4">
-                            <div className="flex flex-row lg:items-start lg:justify-start gap-4">
-                                <h3 className="text-lg font-bold">One Platform, Every Stakeholder</h3>
-                                <h3 className="text-lg font-bold">Smart & Faster Solution Discovery</h3>
-                            </div>
-                            <div className="flex flex-row lg:items-start lg:justify-start gap-4">
-                                <h3 className="text-lg font-bold">Reduced Complexity, Better Execution</h3>
-                                <h3 className="text-lg font-bold">Seamless Collaboration Across Ecosystem</h3>
-                            </div>
-                        </div>
-                        <div className="flex flex-wrap items-start justify-start gap-4">
-                            <a href="" className="bg-green-400 text-white rounded-4xl px-4 py-3">Know More About Samadhantra</a>
-                        </div>
+                        <div className="flex flex-col gap-4 text-gray-700 leading-relaxed">
+        <p>
+          Samadhantra is a unified solution system designed to fulfil demand
+          and supply for all stakeholders through a structured, transparent,
+          and collaborative platform.
+        </p>
+        <p>
+          We bring together individuals, institutions, service providers,
+          industry, academia, NGOs, and government bodies to create an
+          ecosystem where requirements are clearly identified, resources are
+          efficiently aligned, and solutions are effectively delivered.
+        </p>
+        <p>
+          Samadhantra is not just a platform—it is a system that enables
+          collaboration, trust, and sustainable outcomes across sectors.
+        </p>
+      </div>
+
+    
+      <div className="flex flex-col gap-3">
+  <div className="flex flex-col sm:flex-row gap-6">
+    <h3 className="text-lg font-bold sm:w-1/2 text-center sm:text-left">
+      One Platform, Every Stakeholder
+    </h3>
+    <h3 className="text-lg font-bold sm:w-1/2 text-center sm:text-left">
+      Smart & Faster Solution Discovery
+    </h3>
+  </div>
+
+  <div className="flex flex-col sm:flex-row gap-6">
+    <h3 className="text-lg font-bold sm:w-1/2 text-center sm:text-left">
+      Reduced Complexity, Better Execution
+    </h3>
+    <h3 className="text-lg font-bold sm:w-1/2 text-center sm:text-left">
+      Seamless Collaboration Across Ecosystem
+    </h3>
+  </div>
+</div>
+
+      <div className="flex justify-center lg:justify-start">
+        <a
+          href=""
+          className="bg-green-500 hover:bg-green-600 transition text-white rounded-full px-6 py-3 font-medium"
+        >
+          Know More About Samadhantra
+        </a>
+      </div>
+      
                     </div>
                 </div>
+
+                
             </div>
 
             <div className="flex flex-col items-center justify-center w-full pt-10">
-                        <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-32 text-center">
+                        <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-24 text-center">
                             <h2 className="text-black  text-xl sm:text-2xl lg:text-3xl font-bold">
                                How Samadhantra Creates Impact
                             </h2>
@@ -113,7 +148,7 @@ function About(){
                             
                         </div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-16 lg:px-28 pt-8 pb-28">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-16 lg:px-28 pt-8 ">
 
                                 <div className="flex flex-col rounded-2xl border border-gray-300 overflow-hidden">
                                     <img src="/image/vision.jpg" alt="Vision" className="w-full" />
@@ -152,7 +187,7 @@ function About(){
              </div>
 
              <div className="flex flex-col items-center justify-center w-full pt-10">
-                            <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-32 text-center">
+                            <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-24 text-center">
                                 <span className="text-[#49981e]  text-xl sm:text-2xl font-bold">
                                     WHY SAMADHANTRA
                                 </span>
@@ -170,10 +205,10 @@ function About(){
                                 
                             </div>
             
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-16 pt-8 pb-28">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-16 pt-6 ">
             
             
-                                <div className="bg-[#faefef] rounded-2xl p-6 flex flex-col items-start gap-4 
+                                <div className="bg-[#f8f8f3] rounded-2xl p-6 flex flex-col items-start gap-4 
                               hover:shadow-lg transition">
             
                                     <div className="w-12 h-12 rounded-full bg-white 
@@ -191,7 +226,7 @@ function About(){
                                 </div>
             
             
-                                <div className="bg-[#faefef] rounded-2xl p-6 flex flex-col items-start gap-4 
+                                <div className="bg-[#f8f8f3] rounded-2xl p-6 flex flex-col items-start gap-4 
                               hover:shadow-lg transition">
             
                                     <div className="w-12 h-12 rounded-full bg-white 
@@ -209,7 +244,7 @@ function About(){
                                 </div>
             
             
-                                <div className="bg-[#faefef] rounded-2xl p-6 flex flex-col items-start gap-4 
+                                <div className="bg-[#f8f8f3] rounded-2xl p-6 flex flex-col items-start gap-4 
                               hover:shadow-lg transition">
             
                                     <div className="w-12 h-12 rounded-full bg-white 
@@ -233,7 +268,7 @@ function About(){
             
                         </div>
 
-            <div className="w-full pt-16">
+           <div className="w-full pt-16">
 
  
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 text-center">
@@ -241,87 +276,103 @@ function About(){
       LEADERSHIP
     </span>
 
-    <p className="text-black text-xl sm:text-2xl lg:text-4xl 
-                  font-bold pt-4 pb-10">
+    <p className="text-black text-xl sm:text-2xl lg:text-4xl font-bold pt-4 pb-12">
       Founder & CEO
     </p>
   </div>
 
+  
+  <div
+    className="
+      max-w-6xl mx-auto
+      flex flex-col lg:flex-row
+      items-center justify-between
+      gap-14
+      px-4 sm:px-6
+    "
+  >
+    
+    <div className="shrink-0 flex justify-center lg:justify-start w-full lg:w-auto">
+      <img
+        src="/image/ramesh-sir.png"
+        alt="Dr. Ramesh"
+        className="
+          w-64 h-64
+          sm:w-72 sm:h-72
+          xl:w-80 xl:h-80
+          rounded-3xl
+          object-contain
+          shadow-lg
+        "
+      />
+    </div>
 
-  <div className=" px-4 sm:px-6 lg:px-24">
-    <div className="flex flex-col lg:flex-row
-      items-center justify-center
-      gap-10">
-
-     
-      <div className="shrink-0 flex justify-center lg:justify-start w-full lg:w-auto">
-        <img
-          src="/image/ramesh-sir.png"
-          alt="Dr. Ramesh"
-          className="w-64 h-64 sm:w-72 sm:h-72 rounded-3xl object-cover shadow-lg"
-        />
-      </div>
-
-      
-      <div className="flex flex-col gap-4
+    
+    <div
+      className="
+        flex flex-col gap-4
         items-center lg:items-start
-        text-center lg:text-left">
+        text-center lg:text-left
+      "
+    >
+      <span className="text-sm font-semibold text-gray-500 uppercase">
+        Founder & CEO
+      </span>
 
-        <span className="text-sm font-semibold text-gray-500 uppercase">
-          Founder & CEO
-        </span>
+      <span className="text-2xl font-bold text-black">
+        Dr. Ramesh
+      </span>
 
-        <span className="text-2xl font-bold text-black">
-          Dr. Ramesh
-        </span>
+      <p className="text-gray-600 max-w-2xl leading-relaxed">
+        With deep-rooted experience in building collaborative ecosystems,
+        Dr. Ramesh leads Samadhantra with a mission to bridge real
+        requirements with the right solutions. His leadership focuses on
+        transparency, trust, and long-term value creation across industries
+        and communities.
+      </p>
 
-        <p className="text-gray-600 max-w-2xl leading-relaxed">
-          With deep-rooted experience in building collaborative ecosystems,
-          Mr. Rajiv Sharma leads Samadhantra with a mission to bridge real
-          requirements with the right solutions. His leadership focuses on
-          transparency, trust, and long-term value creation across industries
-          and communities.
-        </p>
+      <p className="text-gray-700 italic">
+        “When the right people connect with the right purpose, meaningful impact follows”
+      </p>
 
-        <p className="text-gray-700 ">
-          “When the right people connect with the right purpose, meaningful impact follows”
-        </p>
-
-        
-        <ul className="flex flex-col sm:flex-row
+    
+      <ul
+        className="
+          flex flex-col sm:flex-row
           gap-8 pt-6
           items-center lg:items-start
-          text-center lg:text-left">
-          <li className="flex flex-col items-center lg:items-start">
-            <span className="text-3xl font-bold text-black">12+</span>
-            <h3 className="text-sm font-medium text-gray-600">
-              Years of Leadership
-            </h3>
-          </li>
+          text-center lg:text-left
+        "
+      >
+        <li className="flex flex-col items-center lg:items-start">
+          <span className="text-3xl font-bold text-black">12+</span>
+          <h3 className="text-sm font-medium text-gray-600">
+            Years of Leadership
+          </h3>
+        </li>
 
-          <li className="flex flex-col items-center lg:items-start">
-            <span className="text-3xl font-bold text-black">600+</span>
-            <h3 className="text-sm font-medium text-gray-600">
-              Collaborations Enabled
-            </h3>
-          </li>
+        <li className="flex flex-col items-center lg:items-start">
+          <span className="text-3xl font-bold text-black">600+</span>
+          <h3 className="text-sm font-medium text-gray-600">
+            Collaborations Enabled
+          </h3>
+        </li>
 
-          <li className="flex flex-col items-center lg:items-start">
-            <span className="text-3xl font-bold text-black">100%</span>
-            <h3 className="text-sm font-medium text-gray-600">
-              Commitment to Impact
-            </h3>
-          </li>
-        </ul>
-
-      </div>
+        <li className="flex flex-col items-center lg:items-start">
+          <span className="text-3xl font-bold text-black">100%</span>
+          <h3 className="text-sm font-medium text-gray-600">
+            Commitment to Impact
+          </h3>
+        </li>
+      </ul>
     </div>
   </div>
 
 </div>
 
 
-            <div className="w-full pt-10" >
+
+            <div className="w-full pt-16" >
                     <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-32 text-center">
                                 <span className="text-[#1C1C25]  text-xl sm:text-2xl font-bold">
                                     Advisory Team
@@ -339,62 +390,80 @@ function About(){
                                 </p>
                                 
                             </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-8 p-4 sm:px-6 lg:px-12 lg:px-24">
-                            <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
-                                    
-                                    <img src="/image/rakesh-sir.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 sm:px-6 md:px-12 lg:px-24">
 
-                                    <div className="p-6 flex flex-col  items-center justify-center gap-2">
-                                        <span className="text-[#16315a] block  font-semibold text-lg ">
-                                           Rakesh Gupta
-                                        </span>
-                                        <p>
-                                           Executive Advisor
-                                            </p>
+  
+  <div className="flex flex-col rounded-3xl border border-gray-300 overflow-hidden w-full bg-white transition hover:shadow-xl">
+    
+    <div className="w-full aspect-[3/4] overflow-hidden">
+      <img
+        src="/image/rakesh-sir.png"
+        alt="Rakesh Gupta"
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+    </div>
 
-                                            
-                                       
-                                    </div>
-                                </div>
+    <div className="p-6 flex flex-col items-center text-center gap-1">
+      <span className="text-[#16315a] font-semibold text-xl">
+        Rakesh Gupta
+      </span>
+      <p className="text-gray-500 text-sm tracking-wide">
+        Executive Advisor
+      </p>
+      <div className="w-12 h-1 bg-[#16315a] rounded-full mt-2"></div>
+    </div>
+  </div>
 
-                                <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
-                                    
-                                    <img src="/image/priyanka mam.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+  
+  <div className="flex flex-col rounded-3xl border border-gray-300 overflow-hidden w-full bg-white transition hover:shadow-xl">
+    
+    <div className="w-full aspect-[3/4] overflow-hidden">
+      <img
+        src="/image/priyanka mam.png"
+        alt="Priyanka Sarathe"
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+    </div>
 
-                                    <div className="p-6 flex flex-col items-center justify-center gap-2">
-                                        <span className="text-[#16315a] block  font-semibold text-lg ">
-                                            Priyanka Sarathe
-                                        </span>
-                                        <p>
-                                            Executive Advisor
+    <div className="p-6 flex flex-col items-center text-center gap-1">
+      <span className="text-[#16315a] font-semibold text-xl">
+        Priyanka Sarathe
+      </span>
+      <p className="text-gray-500 text-sm tracking-wide">
+        Executive Advisor
+      </p>
+      <div className="w-12 h-1 bg-[#16315a] rounded-full mt-2"></div>
+    </div>
+  </div>
 
-                                            </p>
-                                            
-                                        
-                                    </div>
-                                </div>
+ 
+  <div className="flex flex-col rounded-3xl border border-gray-300 overflow-hidden w-full bg-white transition hover:shadow-xl">
+    
+    <div className="w-full aspect-[3/4] overflow-hidden">
+      <img
+        src="/image/vikash-sir.png"
+        alt="Vikash Gupta"
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+    </div>
 
-                                <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
-                                    
-                                    <img src="/image/vikash-sir.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+    <div className="p-6 flex flex-col items-center text-center gap-1">
+      <span className="text-[#16315a] font-semibold text-xl">
+        Vikash Gupta
+      </span>
+      <p className="text-gray-500 text-sm tracking-wide">
+        Executive Advisor
+      </p>
+      <div className="w-12 h-1 bg-[#16315a] rounded-full mt-2"></div>
+    </div>
+  </div>
 
-                                    <div className="p-6 flex flex-col items-center justify-center gap-2">
-                                        <span className="text-[#16315a] block  font-semibold text-lg ">
-                                           Vikash Gupta
-                                        </span>
-                                        <p>
-                                          Executive Advisor
+</div>
 
-                                            </p>
-                                            
-                                        
-                                    </div>
-                                </div>
-                    </div>
             </div>
             
-            <div className="w-full pt-10">
-                    <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-32 text-center">
+            <div className="w-full pt-16">
+                    <div className="flex flex-col items-center justify-center p-4 sm:px-6 md:px-10 lg:px-24 text-center">
                                 <span className="text-[#1C1C25]  text-xl sm:text-2xl font-bold">
                                     Our Core Team
                                 </span>
@@ -411,83 +480,106 @@ function About(){
                                 </p>
                                 
                             </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-8 p-4 sm:px-6 lg:px-12 lg:px-24">
-                            <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
-                                    
-                                    <img src="/image/core-team2.jpg" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-4 sm:px-6 md:px-12 lg:px-24">
 
-                                    <div className="p-6 flex flex-col  items-center justify-center gap-2">
-                                        <span className="text-[#16315a] block  font-semibold text-lg ">
-                                           Prakash Rao
-                                        </span>
-                                        <p className="text-center">
-                                           Ecosystem Partnerships Lead
-                                            </p>
+  
+  <div className="flex flex-col rounded-3xl border border-gray-300 overflow-hidden w-full bg-white transition hover:shadow-xl">
+    
+    <div className="w-full aspect-[3/4] overflow-hidden">
+      <img
+        src="/image/core-team2.jpg"
+        alt="Prakash Rao"
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+    </div>
 
-                                            
-                                       
-                                    </div>
-                                </div>
+    <div className="p-6 flex flex-col items-center text-center gap-1">
+      <span className="text-[#2f6b4f] font-semibold text-xl">
+        Prakash Rao
+      </span>
+      <p className="text-gray-600 text-sm tracking-wide">
+        Ecosystem Partnerships Lead
+      </p>
+      <div className="w-12 h-1 bg-[#2f6b4f] rounded-full mt-2"></div>
+    </div>
+  </div>
 
-                                <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
-                                    
-                                    <img src="/image/core-team3.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+  
+  <div className="flex flex-col rounded-3xl border border-gray-300 overflow-hidden w-full bg-white transition hover:shadow-xl">
+    
+    <div className="w-full aspect-[3/4] overflow-hidden">
+      <img
+        src="/image/core-team3.png"
+        alt="Nidhi Joshi"
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+    </div>
 
-                                    <div className="p-6 flex flex-col items-center justify-center gap-2">
-                                        <span className="text-[#16315a] block  font-semibold text-lg ">
-                                           Nidhi Joshi
-                                        </span>
-                                        <p className="text-center">
-                                            Product & Platform Manager
+    <div className="p-6 flex flex-col items-center text-center gap-1">
+      <span className="text-[#2f6b4f] font-semibold text-xl">
+        Nidhi Joshi
+      </span>
+      <p className="text-gray-600 text-sm tracking-wide">
+        Product & Platform Manager
+      </p>
+      <div className="w-12 h-1 bg-[#2f6b4f] rounded-full mt-2"></div>
+    </div>
+  </div>
 
-                                            </p>
-                                            
-                                        
-                                    </div>
-                                </div>
 
-                                <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
-                                    
-                                    <img src="/image/core-team2.jpg" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+  <div className="flex flex-col rounded-3xl border border-gray-300 overflow-hidden w-full bg-white transition hover:shadow-xl">
+    
+    <div className="w-full aspect-[3/4] overflow-hidden">
+      <img
+        src="/image/core-team2.jpg"
+        alt="Aarav Malhotra"
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+    </div>
 
-                                    <div className="p-6 flex flex-col items-center justify-center gap-2">
-                                        <span className="text-[#16315a] block  font-semibold text-lg ">
-                                           Aarav Malhotra
-                                        </span>
-                                        <p className="text-center">
-                                         Growth & Communications Manager
+    <div className="p-6 flex flex-col items-center text-center gap-1">
+      <span className="text-[#2f6b4f] font-semibold text-xl">
+        Aarav Malhotra
+      </span>
+      <p className="text-gray-600 text-sm tracking-wide">
+        Growth & Communications Manager
+      </p>
+      <div className="w-12 h-1 bg-[#2f6b4f] rounded-full mt-2"></div>
+    </div>
+  </div>
 
-                                            </p>
-                                            
-                                        
-                                    </div>
-                                </div>
+  
+  <div className="flex flex-col rounded-3xl border border-gray-300 overflow-hidden w-full bg-white transition hover:shadow-xl">
+    
+    <div className="w-full aspect-[3/4] overflow-hidden">
+      <img
+        src="/image/core-team3.png"
+        alt="Pooja Deshpande"
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+    </div>
 
-                                 <div className="flex flex-col rounded-3xl  border border-gray-300 overflow-hidden    w-full">
-                                    
-                                    <img src="/image/core-team3.png" alt="Vision" className="w-full h-64 object-cover rounded-t-2xl" />
+    <div className="p-6 flex flex-col items-center text-center gap-1">
+      <span className="text-[#2f6b4f] font-semibold text-xl">
+        Pooja Deshpande
+      </span>
+      <p className="text-gray-600 text-sm tracking-wide">
+        Quality Analyst
+      </p>
+      <div className="w-12 h-1 bg-[#2f6b4f] rounded-full mt-2"></div>
+    </div>
+  </div>
 
-                                    <div className="p-6 flex flex-col items-center justify-center gap-2">
-                                        <span className="text-[#16315a] block  font-semibold text-lg ">
-                                           Pooja Deshpande
+</div>
 
-                                        </span>
-                                        <p className="px-4">
-                                          Quality Analyst
-
-                                            </p>
-                                            
-                                        
-                                    </div>
-                                </div>
-                    </div>
             </div>
+            
             
              
 
-            <div className="w-full pt-20 pb-20">
-                    <div className="container p-4 sm:px-6 lg:px-10 lg:px-24">
-                            <div className="flex flex-col items-center justify-center p-4 sm:px-6 lg:px-10 lg:px-24">
+            <div className="w-full pt-16 pb-20">
+                    <div className=" p-4 sm:px-6 md:px-10 lg:px-24">
+                            <div className="flex flex-col items-center justify-center">
                                     <div className="flex flex-col items-center justify-center">
                                         <span className="text-[#76e366]  text-xl sm:text-2xl font-bold">
                                             OUR TESTIMONIAL
@@ -495,9 +587,9 @@ function About(){
 
                                         <p className="
                                         text-black 
-                                        text-2xl sm:text-3xl lg:text-4xl text-center
+                                        text-2xl sm:text-3xl md:text-4xl text-center
                                         font-bold 
-                                        sm:px-6 lg:px-10 lg:px-24
+                                        sm:px-6 md:px-10 lg:px-24
                                         pt-3 pb-6
                                         max-w-3xl
                                         
@@ -507,13 +599,13 @@ function About(){
                                     </div>
                                    
                             </div>
-                            <div className="   min-h-[450px] w-full ">
+                            <div className=" relative overflow-visible min-h-[450px] w-full ">
                                         <Slider {...settings1}>
                                             <div>
                                                 <div className="flex flex-col items-center justify-center gap-6">
                                         
                                                     <FaQuoteLeft className="text-9xl text-[#0A5585]" />
-                                                    <p className="text-lg text-black text-center font-semibold px-40">"Samadhantra helped us clearly define our requirements and connect with the right partners at the right time. The structured process and transparent collaboration made execution smooth and outcome  driven." </p>
+                                                    <p className="text-lg text-black text-center font-semibold lg:px-40">"Samadhantra helped us clearly define our requirements and connect with the right partners at the right time. The structured process and transparent collaboration made execution smooth and outcome  driven." </p>
                                                     <div className="flex flex-col items-center justify-center gap-4">
                                                             <span className="text-[#0A5585] text-2xl font-bold">Amit Sharma </span>
                                                             <span className="text-xl text-black font-semibold">Founder, Startup / MSME </span>
@@ -527,7 +619,7 @@ function About(){
                                                 <div className="flex flex-col items-center justify-center gap-6">
                                         
                                                     <FaQuoteLeft className="text-9xl text-[#0A5585]" />
-                                                    <p className="text-lg text-black text-center font-semibold px-40">"Being part of the Samadhantra ecosystem gave us access to real and relevant demand. The platform helped us collabrate with multiple stakeholders and build long-term partnerships." </p>
+                                                    <p className="text-lg text-black text-center font-semibold lg:px-40">"Being part of the Samadhantra ecosystem gave us access to real and relevant demand. The platform helped us collabrate with multiple stakeholders and build long-term partnerships." </p>
                                                     <div className="flex flex-col items-center justify-center gap-4">
                                                             <span className="text-[#0A5585] text-2xl font-bold">Rohit Malhotra </span>
                                                             <span className="text-xl text-black font-semibold">Service Provider / Vendor Partner</span>
@@ -541,7 +633,7 @@ function About(){
                                                 <div className="flex flex-col items-center justify-center gap-6">
                                         
                                                     <FaQuoteLeft className="text-9xl text-[#0A5585]" />
-                                                    <p className="text-lg text-black text-center font-semibold px-40 ">"Samadhantra helped us clearly define our requirements and connect with the right partners at the right time. The structured process and transparent collaboration made execution smooth and outcome  driven." </p>
+                                                    <p className="text-lg text-black text-center font-semibold lg:px-40 ">"Samadhantra helped us clearly define our requirements and connect with the right partners at the right time. The structured process and transparent collaboration made execution smooth and outcome  driven." </p>
                                                     <div className="flex flex-col items-center justify-center gap-4">
                                                             <span className="text-[#0A5585] text-2xl font-bold">Amit Sharma </span>
                                                             <span className="text-xl text-black font-semibold">Founder, Startup / MSME </span>
@@ -555,7 +647,7 @@ function About(){
                                                 <div className="flex flex-col items-center justify-center gap-6">
                                         
                                                     <FaQuoteLeft className="text-9xl text-[#0A5585]" />
-                                                    <p className="text-lg text-black text-center font-semibold px-40">"Being part of the Samadhantra ecosystem gave us access to real and relevant demand. The platform helped us collabrate with multiple stakeholders and build long-term partnerships." </p>
+                                                    <p className="text-lg text-black text-center font-semibold lg:px-40">"Being part of the Samadhantra ecosystem gave us access to real and relevant demand. The platform helped us collabrate with multiple stakeholders and build long-term partnerships." </p>
                                                     <div className="flex flex-col items-center justify-center gap-4">
                                                             <span className="text-[#0A5585] text-2xl font-bold">Rohit Malhotra </span>
                                                             <span className="text-xl text-black font-semibold">Service Provider / Vendor Partner</span>

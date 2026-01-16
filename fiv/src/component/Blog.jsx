@@ -8,8 +8,7 @@ function Blog(){
         <>
 
             <div className="w-full">
-                            <div className="container">
-                                <div className="bg-[#faefef] flex flex-col items-center justify-center gap-6 pt-48 pb-44">
+                        <div className="bg-[#faefef] flex flex-col items-center justify-center gap-6 pt-24 pb-24 lg:pt-44 lg:pb-44">
                                     <h3 className="text-7xl font-bold text-center">Blog</h3>
                                     <ul className="flex flex-row items-center justify-center gap-5">
                                         <li className="flex flex-row items-center justify-center gap-2">
@@ -19,7 +18,7 @@ function Blog(){
                                         <li className="text-2xl font-bold">Blog</li>
                                     </ul>
                                 </div>
-                            </div>
+                            
                     </div>
             
 
